@@ -9,18 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    behaviors {
-        win_layer_1: win_layer_1 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "WIN_LAYER_1";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            hold-trigger-key-positions = <38>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -32,10 +20,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E         &kp R      &kp T           &kp Y    &kp U          &kp I      &kp O    &kp P     &kp ESCAPE
-&kp LSHFT  &kp A  &kp S  &kp D         &kp F      &kp G           &kp H    &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C         &kp V      &kp B           &kp N    &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp DEL
-                         &kp LEFT_ALT  &kp SPACE  &kp LEFT_WIN    &kp RET  &kp BACKSPACE  &tog 1
+&kp TAB    &kp Q  &kp W  &kp E         &kp R      &kp T             &kp Y    &kp U          &kp I      &kp O    &kp P     &kp ESCAPE
+&kp LSHFT  &kp A  &kp S  &kp D         &kp F      &kp G             &kp H    &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp V      &kp B             &kp N    &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp DEL
+                         &kp LEFT_ALT  &kp SPACE  &lt 1 LEFT_WIN    &kp RET  &kp BACKSPACE  &tog 1
             >;
         };
 
