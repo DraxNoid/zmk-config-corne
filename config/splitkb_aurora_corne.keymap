@@ -21,18 +21,18 @@
 
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E         &kp R      &kp T           &kp Y    &kp U          &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D         &kp F      &kp G           &kp H    &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C         &kp V      &kp B           &kp N    &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&kp LSHFT  &kp A  &kp S  &kp D         &kp F      &kp G           &kp H    &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp V      &kp B           &kp N    &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                          &kp LEFT_ALT  &kp SPACE  &kp LEFT_WIN    &kp RET  &kp BACKSPACE  &tog 1
             >;
         };
 
         first_layer {
             bindings = <
-&kp  &kp HOME        &kp UP_ARROW    &kp END          &kp     &kp    &kp  &kp  &gresc  &kp  &kp  &kp
-&kp  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp     &kp    &kp  &kp  &kp     &kp  &kp  &kp
-&kp  &kp             &kp             &kp              &kp     &kp    &kp  &kp  &kp     &kp  &kp  &kp
-                                     &tog 0           &trans  &kp    &kp  &kp  &kp
+&kp  &kp HOME        &kp UP_ARROW    &kp END         &kp      &kp       &mwh SCROLL_UP      &mkp MB1           &mmv MOVE_UP    &mkp MB2          &kp  &kp  
+&kp  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp     &kp       &mwh SCROLL_DOWN     &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp  &kp
+&kp  &kp             &kp             &kp              &kp     &kp       &kp                  &kp                &kp             &kp                &kp  &kp
+                                     &tog 0           &trans  &kp       &kp  &kp  &kp
             >;
         };
     };
