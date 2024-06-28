@@ -29,9 +29,9 @@
 
         first_layer {
             bindings = <
-&kp  &kp HOME        &kp UP_ARROW    &kp END         &kp      &kp       &mwh SCROLL_UP      &mkp MB1           &mmv MOVE_UP    &mkp MB2          &kp  &kp  
-&kp  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp     &kp       &mwh SCROLL_DOWN     &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp  &kp
-&kp  &kp             &kp             &kp              &kp     &kp       &kp                  &kp                &kp             &kp                &kp  &kp
+&kp  &kp HOME        &kp UP_ARROW    &kp END          &kp     &kp       &kp &kp &kp &kp &kp &kp  
+&kp  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp     &kp       &kp &kp &kp &kp  &kp
+&kp  &kp             &kp             &kp              &kp     &kp       &kp &kp &kp &kp &kp &kp
                                      &tog 0           &trans  &kp       &kp  &kp  &kp
             >;
         };
