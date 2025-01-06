@@ -20,19 +20,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E         &kp R      &kp T           &kp Y    &kp U          &kp I      &kp O    &kp P     &kp ESCAPE
-&kp LCTRL  &kp A  &kp S  &kp D         &kp F      &kp G           &kp H    &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C         &kp V      &kp B           &kp N    &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp DEL
-                         &kp LEFT_ALT  &kp SPACE  &kp LEFT_GUI    &kp RET  &kp BACKSPACE  &to 1
+&kp TAB    &kp Q  &kp W    &kp E         &kp R      &kp T           &kp Y    &kp U          &kp I       &kp O    &kp P     &lt 4 ESCAPE
+&kp LCTRL  &kp A  &lt 3 S  &lt 2 D       &lt 1 F    &kp G           &kp H    &lt 1 J        &lt 2 K     &lt 3 L  &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X    &kp C         &kp V      &kp B           &kp N    &kp M          &kp COMMA   &kp DOT  &kp FSLH  &kp PRINTSCREEN
+                           &kp LEFT_ALT  &kp SPACE  &kp LEFT_GUI    &kp RET  &kp BACKSPACE  &kp DELETE
             >;
         };
 
         num-frow {
             bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3  &trans        &trans    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &to 4
+&kp ESC  &kp N1  &kp N2  &kp N3  &trans        &trans    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans
 &trans   &kp N4  &kp N5  &kp N6  &trans        &trans    &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans
-&trans   &kp N7  &kp N8  &kp N9  &kp NUMBER_0  &trans    &kp F11  &kp F12  &trans  &trans  &trans   &to 2
-                         &trans  &to 0         &trans    &trans   &trans   &to 3
+&trans   &kp N7  &kp N8  &kp N9  &kp NUMBER_0  &trans    &kp F11  &kp F12  &trans  &trans  &trans   &trans
+                         &trans  &trans        &trans    &trans   &trans   &trans
             >;
         };
 
@@ -41,7 +41,7 @@
 &trans  &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP    &kp PRINTSCREEN    &trans  &trans          &trans            &trans      &trans  &trans
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans             &trans  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &trans  &trans
 &trans  &trans          &trans          &trans           &trans         &trans             &trans  &trans          &trans            &trans      &trans  &trans
-                                        &trans           &to 0          &trans             &trans  &trans          &to 1
+                                        &trans           &trans         &trans             &trans  &trans          &trans
             >;
         };
 
@@ -50,7 +50,7 @@
 &trans  &kp AT_SIGN  &kp POUND  &kp STAR  &kp PERCENT  &kp AMPERSAND    &kp EXCLAMATION   &kp DOLLAR            &kp MINUS              &kp EQUAL          &kp KP_EQUAL  &trans
 &trans  &kp TILDE    &kp GRAVE  &kp SQT   &kp DQT      &trans           &kp BACKSLASH     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE           &trans        &trans
 &trans  &trans       &trans     &trans    &trans       &trans           &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans        &trans
-                                &trans    &to 0        &trans           &trans            &trans                &to 1
+                                &trans    &trans       &trans           &trans            &trans                &trans
             >;
         };
 
@@ -59,16 +59,16 @@
 &trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &to 5   &to 0   &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans        &to 0         &trans          &trans  &trans  &to 1
+                                        &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
 
         game {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E         &kp R      &kp T    &kp Y    &kp U          &kp I         &kp O    &kp P     &kp ESCAPE
-&kp LCTRL  &kp A  &kp S  &kp D         &kp F      &kp G    &kp H    &kp J          &kp K         &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C         &kp V      &kp B    &kp N    &kp M          &kp COMMA     &kp DOT  &kp FSLH  &kp DEL
-                         &kp LEFT_ALT  &kp SPACE  &mo 1    &kp RET  &kp BACKSPACE  &kp LEFT_GUI
+&kp TAB    &kp Q  &kp W  &kp E         &kp R      &kp T    &kp Y    &kp U          &kp I      &kp O    &kp P     &lt 4 ESCAPE
+&kp LCTRL  &kp A  &kp S  &kp D         &kp F      &kp G    &kp H    &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C         &kp V      &kp B    &kp N    &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp DEL
+                         &kp LEFT_ALT  &kp SPACE  &mo 1    &kp RET  &kp BACKSPACE  &mo 2
             >;
         };
     };
