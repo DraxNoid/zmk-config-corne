@@ -20,10 +20,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W    &kp E         &kp R      &kp T           &kp Y    &kp U          &kp I       &kp O    &kp P     &lt 4 ESCAPE
-&kp LCTRL  &kp A  &lt 3 S  &lt 2 D       &lt 1 F    &kp G           &kp H    &lt 1 J        &lt 2 K     &lt 3 L  &kp SEMI  &kp SQT
+&kp TAB    &kp Q  &kp W    &kp E         &kp R      &kp T           &kp Y    &kp U          &kp I       &kp O    &kp P     &lt 5 ESCAPE
+&kp LCTRL  &kp A  &lt 4 S  &lt 3 D       &lt 2 F    &kp G           &kp H    &lt 2 J        &lt 3 K     &lt 4 L  &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X    &kp C         &kp V      &kp B           &kp N    &kp M          &kp COMMA   &kp DOT  &kp FSLH  &kp PRINTSCREEN
                            &kp LEFT_ALT  &kp SPACE  &kp LEFT_GUI    &kp RET  &kp BACKSPACE  &kp DELETE
+            >;
+        };
+
+        game {
+            bindings = <
+&kp TAB    &kp Q  &kp W  &kp E         &kp R      &kp T    &kp Y    &kp U          &kp I      &kp O    &kp P     &lt 5 ESCAPE
+&kp LCTRL  &kp A  &kp S  &kp D         &kp F      &kp G    &kp H    &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C         &kp V      &kp B    &kp N    &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp DEL
+                         &kp LEFT_ALT  &kp SPACE  &mo 2    &kp RET  &kp BACKSPACE  &mo 3
             >;
         };
 
@@ -57,18 +66,9 @@
         bluetooth {
             bindings = <
 &trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &tog 5  &trans  &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &tog 1  &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                         &trans        &trans        &trans          &trans  &trans  &trans
-            >;
-        };
-
-        game {
-            bindings = <
-&kp TAB    &kp Q  &kp W  &kp E         &kp R      &kp T    &kp Y    &kp U          &kp I      &kp O    &kp P     &lt 4 ESCAPE
-&kp LCTRL  &kp A  &kp S  &kp D         &kp F      &kp G    &kp H    &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C         &kp V      &kp B    &kp N    &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp DEL
-                         &kp LEFT_ALT  &kp SPACE  &mo 1    &kp RET  &kp BACKSPACE  &mo 2
             >;
         };
     };
